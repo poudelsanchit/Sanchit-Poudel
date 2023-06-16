@@ -10,6 +10,7 @@ export default {
       'bg-secondary': '#393E46',
       'primary': '#EEEEEE',
       'secondary': '#00ADB5',
+      'box': '#151414'
 
     }
   },
