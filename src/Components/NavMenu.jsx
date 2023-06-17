@@ -25,10 +25,10 @@ const NavMenu = () => {
                     {isOpen ?
                         <div className='transition-all ease-out duration-300	 absolute flex flex-col gap-2 rounded-md right-0 z-50 bg-box mt-1 mr-6 md:hidden'>
                             <div className="close-icon"><IoCloseOutline className='close-icon text-4xl cursor-pointer md:hidden' onClick={() => setIsOpen((value) => false)} /></div>
-                            <NavLink className='pr-4 pl-4' to={'/'}><li>Home</li></NavLink>
-                            <NavLink className='pr-4 pl-4' to={'/about'}><li>About</li></NavLink>
-                            <NavLink className='pr-4 pl-4' to={'/projects'}> <li>Projects</li></NavLink>
-                            <NavLink className='pr-4 pl-4' to={'/contact'}><li>Contact</li></NavLink>
+                            <NavLink className='pr-4 pl-4' to={'/'} onClick={() => setIsOpen((value) => false)}><li>Home</li></NavLink>
+                            <NavLink className='pr-4 pl-4' to={'/about'} onClick={() => setIsOpen((value) => false)} ><li>About</li></NavLink>
+                            <NavLink className='pr-4 pl-4' to={'/projects'} onClick={() => setIsOpen((value) => false)}> <li>Projects</li></NavLink>
+                            <NavLink className='pr-4 pl-4' to={'/contact'} onClick={() => setIsOpen((value) => false)}><li>Contact</li></NavLink>
 
                         </div>
                         :

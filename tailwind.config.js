@@ -10,7 +10,11 @@ export default {
       'bg-secondary': '#393E46',
       'primary': '#EEEEEE',
       'secondary': '#00ADB5',
-      'box': '#151414'
+      'box': '#151414',
+      'bg-primary2': '#191627',
+      'bg-secondary2': '#6e57e0',
+      'button-hover': '#5a43cb',
+      'white': '#ffffff'
 
     }
   },
