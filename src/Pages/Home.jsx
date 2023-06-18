@@ -8,7 +8,7 @@ const Home = () => {
             <div className='flex flex-col w-4/5 items-center '>
 
                 <div className="img w-4/5"><img src='https://sanchitpoudel.com.np/assets/logo.jpeg' alt="" className='rounded-md' /></div>
-                <div className="text-3xl w-4/5 pt-5">Hi, I'm Sanchit</div>
+                <div className="text-3xl w-full pt-5">Hi, I'm Sanchit</div>
                 <div className='flex flex-row w-full gap-3'>
                     <div className='pt-1'>
                         <div className='flex flex-col items-center'>
