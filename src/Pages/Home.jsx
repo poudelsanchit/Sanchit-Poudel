@@ -58,7 +58,7 @@ const Home = () => {
                 <div className='pt-32 flex flex-col justify-center  w-full '>
                     <div className='flex flex-col items-center text-xs text-text-tertiary md:items-start '>Let me introduce myself</div>
                     <div className='flex flex-col items-center text-4xl w-full  justify-center font-Montserrat font-bold pt-2 md:justify-start md:items-start'>ABOUT ME</div>
-                    <div className='md:flex'>
+                    <div className='gap-5 md:flex'>
                         <div className='md:w-6/7'>
                             <div className='flex flex-col items-start text-text-tertiary text-sm  pt-3'>I'm a Frontend Developer currently studying software enginnering in Nepal. </div>
                             <div className='text-text-tertiary text-sm  pt-3'>Fast forward to 2023 and I’ve tried it all, from HTML/CSS to React,Tailwind. Everything I have done, small or big, has been a vital stepping stone for where I am today</div>
