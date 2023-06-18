@@ -1,6 +1,7 @@
 import React from 'react'
 import { GrProjects } from 'react-icons/gr';
 import { NavLink } from 'react-router-dom';
+import Testimonals from './Testimonals';
 
 const Home = () => {
 
@@ -13,7 +14,7 @@ const Home = () => {
                         <img src='https://sanchitpoudel.com.np/assets/logo.jpeg' alt="" className='rounded-md' />
                     </div>
                     <div className='w-full md:order-1'>
-                        <div className="text-3xl w-full pt-5 md:text-5xl">Hi,<br /> I'm Sanchit</div>
+                        <div className="text-3xl w-full pt-5 md:text-5xl">Hi,<br /> I'm Sanchit Poudel</div>
                         <div className='flex flex-row w-full gap-3 pt-5'>
                             <div className='pt-1'>
                                 <div className='flex flex-col items-center'>
@@ -55,25 +56,29 @@ const Home = () => {
 
 
                 <div className='pt-32 flex flex-col justify-center  w-full '>
-                    <div className='flex flex-col items-center text-xs text-text-tertiary '>Let me introduce myself</div>
-                    <div className='flex flex-col items-center text-4xl w-full  justify-center font-Montserrat font-bold pt-2 '>ABOUT ME</div>
-                    <div className='flex flex-col items-start text-text-tertiary text-sm  pt-3'>I'm a Frontend Developer currently studying software enginnering in Nepal.</div>
-                    <div className='text-text-tertiary text-sm  pt-3'>Fast forward to 2023 and I’ve tried it all, from HTML/CSS to React,Tailwind. Everything I have done, small or big, has been a vital stepping stone for where I am today</div>
-                    <div className=" flex flex-col w-full items-center pt-5">
-                        <NavLink to={'/about'}><button className='w-max px-16 py-3 border-bg-secondary2 border-solid border-2 rounded-md hover:bg-button-hover'>
-                            <p className='text-white'>Read more   </p>
+                    <div className='flex flex-col items-center text-xs text-text-tertiary md:items-start '>Let me introduce myself</div>
+                    <div className='flex flex-col items-center text-4xl w-full  justify-center font-Montserrat font-bold pt-2 md:justify-start md:items-start'>ABOUT ME</div>
+                    <div className='md:flex'>
+                        <div className='md:w-6/7'>
+                            <div className='flex flex-col items-start text-text-tertiary text-sm  pt-3'>I'm a Frontend Developer currently studying software enginnering in Nepal. </div>
+                            <div className='text-text-tertiary text-sm  pt-3'>Fast forward to 2023 and I’ve tried it all, from HTML/CSS to React,Tailwind. Everything I have done, small or big, has been a vital stepping stone for where I am today</div>
+                        </div>
 
-                        </button></NavLink>
+                        <div className=" flex flex-col w-full items-center pt-5">
+                            <NavLink to={'/about'}><button className='w-max px-16 py-3 border-bg-secondary2 border-solid border-2 rounded-md hover:bg-button-hover'>
+                                <p className='text-white'>Read more   </p>
+
+                            </button></NavLink>
+                        </div>
                     </div>
+
 
                     {/*
                     <div className='text-text-tertiary text-sm  pt-3'>What excites me most about working in software development is being able to design and create things that have purpose and solve real problems. Leaning into customer research and insight, finding the right problems to solve, delivering that value as quickly as possible, learning from it and then iterating and improving that value over time is the key to great design. </div> */}
                 </div>
-                <div className='pt-16 flex flex-col justify-center  w-full'>
-                    <div className='flex flex-col items-center text-xs text-text-tertiary '>see what our clients say about me</div>
-                    <div className='flex flex-col items-center text-4xl w-full  justify-center font-Montserrat font-bold pt-2 '>Testimonals</div>
+                <Testimonals />
 
-                </div>
+                <br />
             </div>
 
 
