@@ -17,7 +17,8 @@ export default {
       'white': '#ffffff',
       'text-secondary': '#6d6a7c',
       'text-tertiary': '#BCB4B4',
-      'primary-background': '#191627'
+      'primary-background': '#191627',
+      'bottom-nav-background': '#5235a6'
 
     },
     fontFamily: {

@@ -23,7 +23,7 @@ const Testimonals = () => {
         },
         {
             id: 3,
-            name: 'Prashant Lamichane',
+            name: 'Prashant',
             position: 'Senior Data Engineer',
             title: 'NetBros',
             content: 'Really amazing communication skills.Always understand what I am trying to achieve.Also, his work is really amazing.Do really high- quality work.'
@@ -60,7 +60,7 @@ const Testimonals = () => {
             <SwitchTransition component={null}>
                 <CSSTransition key={activeSlide.id} timeout={300} classNames='fade'>
                     <div className='flex flex-col 	items-center w-full bg-box rounded-md px-10 pt-5 pb-5 mt-5 md:3/5 '>
-                        <div className="content text-sm text-text-tertiary">
+                        <div className="content text-xs text-text-tertiary md:text-sm">
                             {activeSlide.content}
                         </div>
                         <div className="person-name flex justify-center text-xl">{activeSlide.name}</div>
