@@ -6,7 +6,7 @@ import Testimonals from './Testimonals';
 const Home = () => {
 
     return (
-        <div className='  pt-24  w-screen flex  justify-center h-max'>
+        <div className='  pt-24  w-screen flex  justify-center h-full'>
             {/* intro */}
             <div className='flex flex-col w-4/5 items-center '>
                 <div className='flex flex-col items-center md:flex-row'>
