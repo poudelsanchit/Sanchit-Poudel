@@ -11,12 +11,12 @@ const NavMenu = () => {
     return (
         <>
 
-            <header className='fixed w-screen   pt-5 top-0 bg-primary-background shadow-sm md:bg-bg-primary md:w-screen md:fixed md:pb-5 md:z-50 '>
+            <header className='fixed w-screen   pt-5 top-0 bg-bg-primary2 shadow-sm md:bg-bg-primary2 md:w-screen md:fixed md:pb-5 md:z-50 '>
 
                 <nav className='items-baseline flex flex-row mt-0 md:justify-evenly'>
                     <div className='flex justify-start align-middle text-3xl pl-5'>Sanchit</div>
 
-                    <div className='hidden rounded-lg  items-end  flex-col z-50 gap-4 md:flex md:gap-10  md:bg-bg-primary md:z-50 md:flex-row ' >
+                    <div className='hidden rounded-lg  items-end  flex-col z-50 gap-4 md:flex md:gap-10  md:bg-bg-primary2 md:z-50 md:flex-row ' >
                         <NavLink to={'/'}><li>Home</li></NavLink>
                         <NavLink to={'/about'}><li>About</li></NavLink>
                         <NavLink to={'/projects'}> <li>Projects</li></NavLink>
