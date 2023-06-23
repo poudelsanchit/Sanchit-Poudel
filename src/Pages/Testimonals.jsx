@@ -49,10 +49,8 @@ const Testimonals = () => {
         else {
             setActiveIndex((oldIndex) => ++oldIndex);
         }
-        console.log(activeIndex)
     }
 
-    console.log(activeSlide);
     return (
         <div className='pt-32 flex flex-col justify-center items-center w-full'>
             <div className='flex flex-col items-center text-xs text-text-tertiary'>see what our clients say about me</div>
