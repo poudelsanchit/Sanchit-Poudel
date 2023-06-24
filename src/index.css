@@ -50,6 +50,8 @@
         align-items: flex-end;
     }
 
+
+
 }
 
 .active {
@@ -111,4 +113,24 @@
     transition-property: 'opacity', 'transform';
 
 
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    height: 50px;
+    width: fit-content;
+    padding: 30px;
+    background-color: #6e57e0;
+    color: white;
+    border-radius: 6px;
+    top: 40px;
+    right: 0;
+    left: auto;
+
+}
+
+.swiper-button-prev {
+    right: 100px;
 }

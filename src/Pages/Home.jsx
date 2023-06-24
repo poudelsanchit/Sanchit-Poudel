@@ -78,6 +78,7 @@ const Home = () => {
                     <div className='text-text-tertiary text-sm  pt-3'>What excites me most about working in software development is being able to design and create things that have purpose and solve real problems. Leaning into customer research and insight, finding the right problems to solve, delivering that value as quickly as possible, learning from it and then iterating and improving that value over time is the key to great design. </div> */}
                 </div>
                 <Projects />
+
                 <Testimonals />
 
                 <br />
