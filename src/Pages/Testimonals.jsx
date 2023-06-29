@@ -17,7 +17,7 @@ const Testimonals = () => {
         {
             id: 2,
             name: 'Ananda Bastakoti',
-            position: 'Co-founder',
+            position: 'Founder',
             title: 'NetBros',
             content: 'Really hard- working person.Deliver the work as promised.Planning to work more with this person.'
         },
@@ -52,7 +52,7 @@ const Testimonals = () => {
     }
 
     return (
-        <div className='pt-32 flex flex-col justify-center items-center w-full'>
+        <div className='pt-32 flex flex-col justify-center items-center w-4/5'>
             <div className='flex flex-col items-center text-xs text-text-tertiary'>see what our clients say about me</div>
             <div className='flex flex-col items-center text-5xl w-full  justify-center font-Montserrat font-bold pt-2s'>Testimonals</div>
             <SwitchTransition component={null}>

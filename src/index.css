@@ -121,7 +121,7 @@
     position: absolute;
     height: 50px;
     width: fit-content;
-    padding: 30px;
+    padding: 20px;
     background-color: #6e57e0;
     color: white;
     border-radius: 6px;
@@ -131,6 +131,21 @@
 
 }
 
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    font-size: 1.5rem;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-prev:after {
+    font-size: 1.5rem;
+}
+
 .swiper-button-prev {
     right: 100px;
+}
+
+*/ .swiper {
+    width: 100%;
+    height: 100%;
 }

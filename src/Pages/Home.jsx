@@ -3,16 +3,17 @@ import { GrProjects } from 'react-icons/gr';
 import { NavLink } from 'react-router-dom';
 import Testimonals from './Testimonals';
 import Projects from './Projects';
+import MainPhoto from '../assets/logo.jpeg'
 
 const Home = () => {
 
     return (
-        <div className='  pt-24  w-screen flex  justify-center h-full'>
+        <div className='  pt-24  w-screen flex  justify-center h-full pb-10'>
             {/* intro */}
-            <div className='flex flex-col w-4/5 items-center '>
-                <div className='flex flex-col items-center md:flex-row'>
+            <div className='flex flex-col w-full items-center '>
+                <div className='flex w-4/5 flex-col items-center md:flex-row'>
                     <div className="img w-4/5 md:order-2">
-                        <img src='https://sanchitpoudel.com.np/assets/logo.jpeg' alt="" className='rounded-md' />
+                        <img src={MainPhoto} alt="" className='rounded-md' />
                     </div>
                     <div className='w-full md:order-1'>
                         <div className="text-3xl w-full pt-5 md:text-5xl">Hi,<br /> I'm Sanchit Poudel</div>
@@ -55,8 +56,8 @@ const Home = () => {
 
 
 
-
-                <div className='pt-32 flex flex-col justify-center  w-full '>
+                {/* about */}
+                <div className='pt-32 flex flex-col justify-center  w-4/5 '>
                     <div className='flex flex-col items-center text-xs text-text-tertiary md:items-start '>Let me introduce myself</div>
                     <div className='flex flex-col items-center text-4xl w-full  justify-center font-Montserrat font-bold pt-2 md:justify-start md:items-start'>ABOUT ME</div>
                     <div className='gap-5 md:flex'>

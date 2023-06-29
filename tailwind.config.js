@@ -2,6 +2,21 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
+
+    screens: {
+      'm': '375px', //small mobile
+      'l': '425px', //large mobile
+      'sm': '640px', //small Tablet
+      'md': '768px	', // tablet
+      '2md': '894px',
+      'lg': '1024px', //laptop
+      'xl': '1280px	', //large laptop
+      '2xl': '1536px	', //large screens
+
+
+
+    },
+
     extend: {
 
     },
