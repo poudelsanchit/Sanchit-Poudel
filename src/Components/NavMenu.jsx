@@ -3,10 +3,27 @@ import { NavLink } from 'react-router-dom'
 import { CgMenuRight } from 'react-icons/cg';
 import { IoCloseOutline } from 'react-icons/io5';
 import { useState } from 'react';
+import { BsMoonFill, BsSun } from 'react-icons/bs';
+import { BsSunFill } from 'react-icons/bs';
+
+
 
 const NavMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [theme,setTheme] = useState("system");
+    const [theme, setTheme] = useState("light");
+    const handleThemeSwitcher = () => {
+        const html = document.querySelector('html');
+        if (theme === 'light') {
+            setTheme('dark');
+            html.classList.add('dark');
+        }
+        else {
+            html.classList.remove('dark');
+            setTheme('light')
+        }
+        console.log(theme);
+
+    }
 
     console.log(isOpen)
     return (
@@ -15,7 +32,16 @@ const NavMenu = () => {
             <header className='fixed w-screen z-50   pt-5 top-0 bg-bg-primary2 shadow-sm md:bg-bg-primary2 md:w-screen md:fixed md:pb-5 md:z-50 '>
 
                 <nav className='items-baseline flex flex-row mt-0 md:justify-evenly'>
-                    <div className='flex justify-start align-middle text-3xl pl-5'>Sanchit</div>
+                    <button onClick={handleThemeSwitcher} className='p-3 bg-bg-secondary2  hover:bg-button-hover absolute top-5 right-10 rounded-md'>
+                        {
+                            theme == 'light' ? <BsMoonFill />
+                                : <BsSunFill />
+
+                        }
+
+                    </button>
+
+                    <div className='flex justify-start align-middle text-3xl pl-5 text-bg-secondary2 dark:text-text-tertiary '>Sanchit</div>
 
                     <div className='hidden rounded-lg  items-end  flex-col z-50 gap-4 md:flex md:gap-10  md:bg-bg-primary2 md:z-50 md:flex-row ' >
                         <NavLink to={'/'}><li>Home</li></NavLink>
@@ -37,6 +63,7 @@ const NavMenu = () => {
 
 
                     }
+
 
                 </nav >
 
