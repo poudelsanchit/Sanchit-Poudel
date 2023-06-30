@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 const NavMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [theme,setTheme] = useState("system");
 
     console.log(isOpen)
     return (

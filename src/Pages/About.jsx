@@ -3,7 +3,7 @@ import Sanchit from '../assets/image4.jpg'
 const About = () => {
     return (
         <>
-            <div className=' w-screen h-max flex items-center justify-center pt-32 pb-96 '>
+            <div className=' w-screen h-max flex items-center justify-center pt-32  '>
                 <div className='w-11/12 flex flex-col  sm:flex-row'>
                     <div className='sm:w-full'>
                         <div className='sm:w-11/12'>
@@ -28,6 +28,11 @@ const About = () => {
                 </div >
 
             </div >
+            <div className=' w-screen h-max flex items-center justify-center pt-32  '>
+                <div className='mt-5 text-3xl'>My Journey
+
+                </div>
+            </div>
 
         </>
     )

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { GrProjects } from 'react-icons/gr';
 import { NavLink } from 'react-router-dom';
 import Testimonals from './Testimonals';
@@ -6,14 +6,32 @@ import Projects from './Projects';
 import MainPhoto from '../assets/logo.jpeg'
 
 const Home = () => {
+    const time = new Date().toLocaleTimeString();
+    const [cTime, SetCTime] = useState(time);
+    const UpdateTime = () => {
+        const time = new Date().toLocaleTimeString();
+        SetCTime(time)
+
+    }
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         SetTime(new Date())
+    //     }, 1000)
+
+    // })
+    setInterval(UpdateTime, 1000)
 
     return (
         <div className='  pt-24  w-screen flex  justify-center h-full pb-10'>
+
             {/* intro */}
             <div className='flex flex-col w-full items-center '>
+                <div className='absolute text-xs  text-text-tertiary top-52 left-0 -rotate-90 '>{time}</div>
+
                 <div className='flex w-4/5 flex-col items-center md:flex-row'>
-                    <div className="img w-4/5 md:order-2">
-                        <img src={MainPhoto} alt="" className='rounded-md' />
+                    <div className="flex flex-row gap-5 w-4/5 md:order-2">
+
+                        <img src={MainPhoto} alt="" className='rounded-md w-4/5' />
                     </div>
                     <div className='w-full md:order-1'>
                         <div className="text-3xl w-full pt-5 md:text-5xl">Hi,<br /> I'm Sanchit Poudel</div>
