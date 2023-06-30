@@ -65,7 +65,7 @@ const Home = () => {
                             </NavLink>
 
                         </div>
-                        <button> <input type="date" name="" id="" className='text-bg-dark px-2 py-2 rounded-md mt-2' />Pick Date</button>
+                        <input type="date" name="" id="" className='text-bg-dark px-2 py-2 rounded-md mt-2' placeholder='Pick Date' />
                     </div>
 
                 </div>
