@@ -14,7 +14,7 @@ const DatePicker = () => {
                 type="date"
                 value={selectedDate}
                 onChange={handleDateChange}
-                className='text-box'
+                className='text-box border-2 border-solid rounded-md'
             />
         </div>
     );
