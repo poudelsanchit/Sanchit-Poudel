@@ -29,7 +29,7 @@ const NavMenu = () => {
     return (
         <>
 
-            <header className='fixed w-screen z-50   pt-5 top-0 bg-bg-primary2 shadow-sm md:bg-bg-primary2 md:w-screen md:fixed md:pb-5 md:z-50 '>
+            <header className='fixed w-screen z-50   pt-5 top-0 bg-primary shadow-sm md:bg-primary dark:bg-bg-primary2 md:w-screen md:fixed md:pb-5 md:z-50 '>
 
                 <nav className='items-baseline flex flex-row mt-0 md:justify-evenly'>
                     <button onClick={handleThemeSwitcher} className='p-3 bg-bg-secondary2  hover:bg-button-hover absolute top-5 right-10 rounded-md'>
@@ -38,20 +38,26 @@ const NavMenu = () => {
                                 : <BsSunFill />
 
                         }
-
                     </button>
-
-                    <div className='flex justify-start align-middle text-3xl pl-5 text-bg-secondary2 dark:text-text-tertiary '>Sanchit</div>
-
-                    <div className='hidden rounded-lg  items-end  flex-col z-50 gap-4 md:flex md:gap-10  md:bg-bg-primary2 md:z-50 md:flex-row ' >
-                        <NavLink to={'/'}><li>Home</li></NavLink>
-                        <NavLink to={'/about'}><li>About</li></NavLink>
-                        <NavLink to={'/projects'}> <li>Projects</li></NavLink>
-                        <NavLink to={'/contact'}><li>Contact</li></NavLink>
+                    <div className='flex justify-start align-middle text-3xl pl-5 text-box dark:text-primary'>Sanchit</div>
+                    <div className='hidden rounded-lg  items-end  flex-col z-50 gap-4 md:flex md:gap-10  text-box  md:z-50 md:flex-row ' >
+                        <NavLink to={'/'} className={({ isActive, isPending }) =>
+                            isPending ? "text-box " : isActive ? "text-bg-secondary2" : " text-box dark:text-white"
+                        }><li>Home</li></NavLink>
+                        <NavLink className={({ isActive, isPending }) =>
+                            isPending ? "text-primary" : isActive ? "text-bg-secondary2" : " text-box dark:text-white"
+                        } to={'/about'}><li>About</li></NavLink>
+                        <NavLink className={({ isActive, isPending }) =>
+                            isPending ? "text-primary" : isActive ? "text-bg-secondary2" : " text-box  dark:text-white"
+                        } to={'/projects'}> <li>Projects</li></NavLink>
+                        <NavLink className={({ isActive, isPending }) =>
+                            isPending ? "text-primary" : isActive ? "text-bg-secondary2" : " text-box  dark:text-white"
+                        } to={'/contact'}><li>Contact</li></NavLink>
+                        <NavLink></NavLink>
                     </div>
                     {isOpen ?
                         <div className='transition-all ease-out duration-300	 absolute flex flex-col gap-2 rounded-md right-0 z-50 bg-box mt-1 mr-6 md:hidden'>
-                            <div className="close-icon"><IoCloseOutline className='close-icon text-4xl cursor-pointer md:hidden' onClick={() => setIsOpen((value) => false)} /></div>
+                            <div className="close-icon"><IoCloseOutline className='close-icon text-4xl cursor-pointer md:hidden dark:text-primary' onClick={() => setIsOpen((value) => false)} /></div>
                             <NavLink className='pr-4 pl-4' to={'/'} onClick={() => setIsOpen((value) => false)}><li>Home</li></NavLink>
                             <NavLink className='pr-4 pl-4' to={'/about'} onClick={() => setIsOpen((value) => false)} ><li>About</li></NavLink>
                             <NavLink className='pr-4 pl-4' to={'/projects'} onClick={() => setIsOpen((value) => false)}> <li>Projects</li></NavLink>

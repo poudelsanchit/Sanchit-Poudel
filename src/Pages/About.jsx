@@ -3,7 +3,7 @@ import Sanchit from '../assets/image4.jpg'
 const About = () => {
     return (
         <>
-            <div className=' w-screen h-max flex items-center justify-center pt-32  '>
+            <div className=' w-screen h-max flex items-center justify-center pt-32  dark:bg-bg-dark'>
                 <div className='w-11/12 flex flex-col  sm:flex-row'>
                     <div className='sm:w-full'>
                         <div className='sm:w-11/12'>
@@ -28,7 +28,7 @@ const About = () => {
                 </div >
 
             </div >
-            <div className=' w-screen h-max flex items-center justify-center pt-32  '>
+            <div className=' w-screen h-max flex items-center justify-center pt-32  dark:bg-bg-dark'>
                 <div className='w-11/12 flex flex-col items-start justify-start'>
                     <div className='mt-5 text-3xl'>My Journey</div>
                     <div className='text-sm text-text-tertiary mt-5'>Growing up in a middle class family, I've grown up tackling lots of struggles, solving Real time problems and learning new things </div>

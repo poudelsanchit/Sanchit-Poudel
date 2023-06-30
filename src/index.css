@@ -25,7 +25,6 @@
 
     html {
         font-family: 'Roboto Mono', monospace;
-        background-color: var(--primary-background);
         color: var(--white);
 
     }
@@ -42,9 +41,7 @@
 
     }
 
-    li:hover {
-        background-color: var(--deep-dark);
-    }
+
 
     .items-end {
         align-items: flex-end;

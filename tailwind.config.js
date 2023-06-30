@@ -23,12 +23,15 @@ export default {
 
     },
     colors: {
+
       'bg-primary': '#1E1E1E',
       'bg-secondary': '#393E46',
       'primary': '#EEEEEE',
       'secondary': '#00ADB5',
       'box': '#151414',
       'bg-primary2': '#191627',
+      'bg-dark': '#191627',
+      'bg-light': '#ffffff',
       'bg-secondary2': '#6e57e0',
       'button-hover': '#5a43cb',
       'white': '#ffffff',

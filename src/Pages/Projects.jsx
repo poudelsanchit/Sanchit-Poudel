@@ -41,9 +41,9 @@ const Projects = () => {
     ];
 
     return (
-        <div className='pt-32 flex flex-col justify-center items-center w-full'>
-            <div className='flex flex-col items-center text-xs text-text-tertiary'>some of my recent works</div>
-            <div className='flex flex-col items-center text-7xl w-full  justify-center font-Montserrat font-bold pt-2s'>Projects</div>
+        <div className='pt-32 flex flex-col justify-center items-center w-full dark:bg-bg-dark'>
+            <div className='flex flex-col items-center text-xs text-text-secondary dark:text-text-tertiary'>some of my recent works</div>
+            <div className='flex flex-col items-center text-7xl w-full  justify-center font-Montserrat font-bold pt-2s text-box dark:text-primary'>Projects</div>
             {/* project items */}
 
             <div className='w-4/5 '>
