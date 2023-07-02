@@ -147,6 +147,7 @@
     height: 100%;
 }
 
+/* 
 input[type=date],
 input[type=time] {
     border: none;
@@ -165,4 +166,4 @@ input[type=time]::placeholder {
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
-}
+} */

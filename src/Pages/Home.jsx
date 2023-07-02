@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import Testimonals from './Testimonals';
 import Projects from './Projects';
 import MainPhoto from '../assets/logo.jpeg'
-import DatePicker from '../Components/DatePicker';
 
 const Home = () => {
     const time = new Date().toLocaleTimeString();
@@ -66,7 +65,6 @@ const Home = () => {
                             </NavLink>
 
                         </div>
-                        <DatePicker />
 
                     </div>
 
