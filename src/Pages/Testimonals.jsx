@@ -53,8 +53,8 @@ const Testimonals = () => {
 
     return (
         <div className='pt-32 flex flex-col justify-center items-center w-4/5'>
-            <div className='flex flex-col items-center text-xs text-text-tertiary'>see what our clients say about me</div>
-            <div className='flex flex-col items-center text-5xl w-full  justify-center font-Montserrat font-bold pt-2s'>Testimonals</div>
+            <div className='flex flex-col items-center text-xs text-text-secondary dark:text-text-tertiary'>see what our clients say about me</div>
+            <div className='flex flex-col items-center text-5xl w-full  justify-center font-Montserrat font-bold pt-2s text-box dark:text-white'>Testimonals</div>
             <SwitchTransition component={null}>
                 <CSSTransition key={activeSlide.id} timeout={300} classNames='fade'>
                     <div className='flex flex-col 	items-center w-full bg-box rounded-md px-10 pt-5 pb-5 mt-5 md:3/5 '>
@@ -72,13 +72,13 @@ const Testimonals = () => {
 
             <div className="buttons flex flex-row gap-5">
                 <div className=" flex flex-col items-center pt-5">
-                    <button className=' px-12 py-3 border-bg-secondary2 border-solid border-2 rounded-md hover:bg-button-hover' onClick={handlePrev}>
+                    <button className=' px-12 py-3 border-bg-secondary2 bg-bg-secondary2 border-solid border-2 rounded-md hover:bg-button-hover' onClick={handlePrev}>
                         <p className='text-white'>  <HiChevronLeft /> </p>
 
                     </button>
                 </div>
                 <div className=" flex flex-col items-center pt-5">
-                    <button className=' px-12 py-3 border-bg-secondary2 border-solid border-2 rounded-md hover:bg-button-hover' onClick={handleNext}>
+                    <button className=' px-12 py-3 border-bg-secondary2  bg-bg-secondary2 border-solid border-2 rounded-md hover:bg-button-hover' onClick={handleNext}>
                         <p className='text-white'>  <HiChevronRight /> </p>
 
                     </button>
