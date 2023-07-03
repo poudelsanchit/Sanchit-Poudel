@@ -29,10 +29,10 @@ const NavMenu = () => {
     return (
         <>
 
-            <header className='fixed w-screen z-50   pt-5 top-0 bg-primary shadow-sm md:bg-primary dark:bg-bg-primary2 md:w-screen md:fixed md:pb-5 md:z-50 '>
+            <header className='fixed w-screen z-50 pb-5  pt-5 top-0 bg-primary shadow-sm md:bg-primary dark:bg-bg-primary2 md:w-screen md:fixed md:pb-5 md:z-50 '>
 
-                <nav className='items-baseline flex flex-row mt-0 md:justify-evenly'>
-                    <button onClick={handleThemeSwitcher} className='p-3 bg-bg-secondary2  hover:bg-button-hover absolute top-5 right-10 rounded-md'>
+                <nav className='items-baseline flex flex-row mt-0 mr-5 md:justify-evenly'>
+                    <button onClick={handleThemeSwitcher} className='p-1 bg-bg-secondary2  hover:bg-button-hover absolute top-7 right-16 rounded-md md:right-5 lg:right-10'>
                         {
                             theme == 'light' ? <BsMoonFill />
                                 : <BsSunFill />
@@ -53,7 +53,7 @@ const NavMenu = () => {
                         <NavLink className={({ isActive, isPending }) =>
                             isPending ? "text-primary" : isActive ? "text-bg-secondary2" : " text-box  dark:text-white"
                         } to={'/contact'}><li>Contact</li></NavLink>
-                        <NavLink></NavLink>
+
                     </div>
                     {isOpen ?
                         <div className='transition-all ease-out duration-300	 absolute flex flex-col gap-2 rounded-md right-0 z-50 bg-box mt-1 mr-6 md:hidden'>
@@ -65,7 +65,7 @@ const NavMenu = () => {
 
                         </div>
                         :
-                        <div className=" absolute top-0 right-0 mt-6 mr-6 text-3xl cursor-pointer z-50 md:hidden" onClick={() => setIsOpen((value) => true)} ><CgMenuRight /></div>
+                        <div className=" absolute top-0 right-0 mt-6 mr-6 text-3xl cursor-pointer z-50 md:hidden text-box dark:text-primary" onClick={() => setIsOpen((value) => true)} ><CgMenuRight /></div>
 
 
                     }
