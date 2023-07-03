@@ -34,7 +34,7 @@ const Projects = () => {
         {
             id: 4,
             name: 'Sportism',
-            desc: 'Sportism is the ultimate sports app, offering live scores, standings, personalized notifications, and a social community. ',
+            desc: 'Sportism is the ultimate sports app, offering live scores, standings, personalized notifications, and a social community',
             img: `${Sportism}`,
         },
 
