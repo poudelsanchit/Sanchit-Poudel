@@ -43,47 +43,9 @@ const Projects = () => {
     return (
         <div className='pt-32 flex flex-col justify-center items-center w-full dark:bg-bg-dark'>
             <div className='flex flex-col items-center text-xs text-text-secondary dark:text-text-tertiary'>some of my recent works</div>
-            <div className='flex flex-col items-center text-7xl w-full  justify-center font-Montserrat font-bold pt-2s text-box dark:text-primary'>Projects</div>
-            {/* project items */}
+            <div className='flex flex-col items-center text-5xl w-full  justify-center font-Montserrat font-bold pt-2s text-box dark:text-primary'>Projects</div>
 
             <div className='w-4/5 '>
-
-                {/* <Swiper slidesPerView={1} navigation={true} modules={[Navigation, Pagination]}
-                    breakpoints={
-                        {
-                            640: {
-                                slidesPerView: 1
-                            },
-                            768: {
-                                slidesPerView: 2
-                            },
-                            1200: {
-                                slidesPerView: 3
-                            }
-                        }
-                    }
-
-                >
-
-
-
-
-                    {
-                        projects.map((projects) => {
-                            return (
-                                <SwiperSlide key={projects.id} >
-                                    <ProjectsItem name={projects.name} img={projects.img} desc={projects.desc} />
-                                </SwiperSlide>
-
-
-
-                            );
-
-
-
-                        })
-                    }
-                </Swiper > */}
 
                 <Swiper navigation={true} modules={[Navigation]} className="mySwiper"
                     breakpoints={
