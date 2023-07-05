@@ -11,8 +11,8 @@ const ProjectsItem = ({ name, img, desc }) => {
                         <img src={img} alt="" className='object-cover w-full h-full rounded-md' />
                     </div>
                 </NavLink>
-                <div className='bg-box w-60 s:w-64 m:w-72 l:w-11/12 text-lg mt-5 p-3 rounded-md xl:w-96 md:w-72 '>{name}
-                    <div className='text-xs'>{desc}</div>
+                <div className=' bg-bg-secondary2 dark:bg-box w-60 s:w-64 m:w-72 l:w-11/12 text-lg mt-5 p-3 rounded-md xl:w-96 md:w-72 '>{name}
+                    <div className='text-xs text-primary'>{desc}</div>
                 </div>
 
             </div>

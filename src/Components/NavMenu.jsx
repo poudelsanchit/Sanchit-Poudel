@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { CgMenuRight } from 'react-icons/cg';
 import { IoCloseOutline } from 'react-icons/io5';
@@ -10,7 +10,7 @@ import { BsSunFill } from 'react-icons/bs';
 
 const NavMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("dark");
     const handleThemeSwitcher = () => {
         const html = document.querySelector('html');
         if (theme === 'light') {
@@ -21,18 +21,20 @@ const NavMenu = () => {
             html.classList.remove('dark');
             setTheme('light')
         }
-        console.log(theme);
 
     }
+    useEffect(() => {
+        const html = document.querySelector('html');
+        html.classList.add('dark');
+    }, [])
 
-    console.log(isOpen)
     return (
         <>
 
-            <header className='fixed w-screen z-50 pb-5  pt-5 top-0 bg-primary shadow-sm md:bg-primary dark:bg-bg-primary2 md:w-screen md:fixed md:pb-5 md:z-50 '>
+            <header className='fixed w-screen z-50 pb-5  pt-5 top-0 bg-primary shadow-md md:bg-primary dark:bg-bg-primary2 md:w-screen md:fixed md:pb-5 md:z-50 '>
 
                 <nav className='items-baseline flex flex-row mt-0 mr-5 md:justify-evenly'>
-                    <button onClick={handleThemeSwitcher} className='p-1 bg-bg-secondary2  hover:bg-button-hover absolute top-7 right-16 rounded-md md:right-5 lg:right-10'>
+                    <button onClick={handleThemeSwitcher} className='p-1 bg-bg-secondary2 hover:bg-button-hover absolute top-7 right-16 rounded-md md:right-5 lg:right-10'>
                         {
                             theme == 'light' ? <BsMoonFill />
                                 : <BsSunFill />
@@ -42,16 +44,16 @@ const NavMenu = () => {
                     <div className='flex justify-start align-middle text-3xl pl-5 text-box dark:text-primary'>Sanchit</div>
                     <div className='hidden rounded-lg  items-end  flex-col z-50 gap-4 md:flex md:gap-10  text-box  md:z-50 md:flex-row ' >
                         <NavLink to={'/'} className={({ isActive, isPending }) =>
-                            isPending ? "text-box " : isActive ? "text-bg-secondary2" : " text-box dark:text-white"
+                            isPending ? "text-box " : isActive ? "text-button-hover dark:text-bg-secondary2" : " text-box dark:text-white"
                         }><li>Home</li></NavLink>
                         <NavLink className={({ isActive, isPending }) =>
-                            isPending ? "text-primary" : isActive ? "text-bg-secondary2" : " text-box dark:text-white"
+                            isPending ? "text-primary" : isActive ? "text-button-hover dark:text-bg-secondary2" : " text-box dark:text-white"
                         } to={'/about'}><li>About</li></NavLink>
                         <NavLink className={({ isActive, isPending }) =>
-                            isPending ? "text-primary" : isActive ? "text-bg-secondary2" : " text-box  dark:text-white"
+                            isPending ? "text-primary" : isActive ? "text-button-hover dark:text-bg-secondary2" : " text-box  dark:text-white"
                         } to={'/projects'}> <li>Projects</li></NavLink>
                         <NavLink className={({ isActive, isPending }) =>
-                            isPending ? "text-primary" : isActive ? "text-bg-secondary2" : " text-box  dark:text-white"
+                            isPending ? "text-primary" : isActive ? "text-button-hover dark:text-bg-secondary2" : " text-box  dark:text-white"
                         } to={'/contact'}><li>Contact</li></NavLink>
 
                     </div>

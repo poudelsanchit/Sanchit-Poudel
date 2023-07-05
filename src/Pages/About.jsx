@@ -28,7 +28,11 @@ const About = () => {
                 </div >
 
             </div >
-
+            <div className=' w-screen h-max flex items-center justify-center pt-16  dark:bg-bg-dark'>
+                <div className='w-11/12 flex flex-col  sm:flex-row'>
+                    <div className='text-xl'>Skills</div>
+                </div>
+            </div>
         </>
     )
 }

@@ -41,10 +41,9 @@ const Projects = () => {
     ];
 
     return (
-        <div className='pt-32 flex flex-col justify-center items-center w-full dark:bg-bg-dark'>
+        <div className='pt-32 flex flex-col justify-center items-center w-full dark:bg-bg-dark mb-10'>
             <div className='flex flex-col items-center text-xs text-text-secondary dark:text-text-tertiary'>some of my recent works</div>
             <div className='flex flex-col items-center text-5xl w-full  justify-center font-Montserrat font-bold pt-2s text-box dark:text-primary'>Projects</div>
-
             <div className='w-4/5 '>
 
                 <Swiper navigation={true} modules={[Navigation]} className="mySwiper"

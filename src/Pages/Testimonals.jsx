@@ -57,13 +57,14 @@ const Testimonals = () => {
             <div className='flex flex-col items-center text-5xl w-full  justify-center font-Montserrat font-bold pt-2s text-box dark:text-white'>Testimonals</div>
             <SwitchTransition component={null}>
                 <CSSTransition key={activeSlide.id} timeout={300} classNames='fade'>
-                    <div className='flex flex-col 	items-center w-full bg-box rounded-md px-10 pt-5 pb-5 mt-5 md:3/5 '>
-                        <div className="content text-xs text-text-tertiary md:text-sm">
+                    <div className='flex flex-col 	items-center w-full bg-bg-secondary2 dark:bg-box rounded-md px-10 pt-5 pb-5 mt-5 md:3/5 '>
+                        <div className="content text-xs text-primary dark:text-text-tertiary md:text-sm">
+
                             {activeSlide.content}
                         </div>
-                        <div className="person-name flex justify-center text-xl">{activeSlide.name}</div>
-                        <div className="person-work flex justify-center text-sm text-text-tertiary">{activeSlide.position},</div>
-                        <div className="person-work flex justify-center text-sm text-text-tertiary">{activeSlide.title}</div>
+                        <div className="person-name flex justify-center text-xl ">{activeSlide.name}</div>
+                        <div className="person-work flex justify-center text-sm text-primary dark:text-text-tertiary">{activeSlide.position},</div>
+                        <div className="person-work flex justify-center text-sm text-primary dark:text-text-tertiary">{activeSlide.title}</div>
 
                     </div>
                 </CSSTransition>
