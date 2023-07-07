@@ -41,7 +41,9 @@ const NavMenu = () => {
 
                         }
                     </button>
-                    <div className='flex justify-start align-middle text-3xl pl-5 text-box dark:text-primary'>Sanchit</div>
+                    <NavLink to={'/'} >
+                        <div className='flex justify-start align-middle text-3xl pl-5 text-box dark:text-primary '>Sanchit</div >
+                    </NavLink>
                     <div className='hidden rounded-lg  items-end  flex-col z-50 gap-4 md:flex md:gap-10  text-box  md:z-50 md:flex-row ' >
                         <NavLink to={'/'} className={({ isActive, isPending }) =>
                             isPending ? "text-box " : isActive ? "text-button-hover dark:text-bg-secondary2" : " text-box dark:text-white"

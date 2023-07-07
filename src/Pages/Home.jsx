@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import Testimonals from './Testimonals';
 import Projects from './Projects';
 import MainPhoto from '../assets/logo.jpeg'
+import Button from '../Components/Button';
 
 const Home = () => {
     const time = new Date().toLocaleTimeString();
@@ -57,11 +58,7 @@ const Home = () => {
                         </div>
                         <div className="see-my-works w-4/5 pt-5">
                             <NavLink to={'/projects'}>
-                                <button className='w-max px-5 py-3 bg-bg-secondary2 rounded-md hover:bg-button-hover'>
-                                    <p className='text-white'>see my works   </p>
-
-
-                                </button>
+                                <Button button_text={'see my works'} />
                             </NavLink>
 
                         </div>
@@ -100,6 +97,13 @@ const Home = () => {
 
                 <Testimonals />
 
+                <div className=' flex flex-col bg-box w-11/12  lg:w-2/5 mt-36 items-center rounded-lg p-5 gap-2'>
+                    <div className='text-sm text-text-tertiary'>Have a  project in mind?</div>
+                    <div className='text-2xl font-extrabold text-text-tertiary'>Let me help you</div>
+                    <NavLink to={'/contact'}>
+                        <Button button_text={'Contact Me'} />
+                    </NavLink>
+                </div>
                 <br />
             </div>
 
