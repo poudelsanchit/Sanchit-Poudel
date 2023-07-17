@@ -5,7 +5,9 @@ import Testimonals from './Testimonals';
 import Projects from './Projects';
 import MainPhoto from '../assets/logo.jpeg'
 import Button from '../Components/Button';
-
+import { BsInstagram } from 'react-icons/bs';
+import { FiGithub } from 'react-icons/fi';
+import { FaFacebookSquare } from 'react-icons/fa';
 const Home = () => {
     const time = new Date().toLocaleTimeString();
     const [cTime, SetCTime] = useState(time);
@@ -26,7 +28,13 @@ const Home = () => {
         <div className='pt-24 w-screen flex justify-center h-full pb-10 bg-primary dark:bg-bg-dark'>
             {/* intro */}
             <div className='flex flex-col w-full items-center '>
-                <div className='absolute text-xs text-text-secondary dark:text-text-tertiary top-52 left-0 -rotate-90 '>{time}</div>
+                <div className='absolute text-xs text-text-secondary dark:text-text-tertiary top-52 left-0 -rotate-90'>{time}</div>
+                <div className='flex flex-col absolute lg:text-lg text-text-secondary dark:text-text-tertiary top-32 right-5 l:right-10  gap-10 '>
+                    <a href="https://www.instagram.com/poudelsanchit/" target='_blank'><BsInstagram className='cursor-pointer' /></a>
+                    <a href="https://www.facebook.com/snchtpdl12/" target='_blank'><FaFacebookSquare className='cursor-pointer' /></a>
+                    <a href="https://github.com/poudelsanchit/" target='_blank'><FiGithub className='cursor-pointer' /></a>
+                </div>
+
                 <div className='flex w-4/5 flex-col items-center md:flex-row'>
                     <div className="flex flex-row gap-5 w-4/5 md:order-2">
                         <img src={MainPhoto} alt="" className='rounded-md w-4/5' />
