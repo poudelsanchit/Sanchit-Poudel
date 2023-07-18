@@ -23,6 +23,17 @@ const Home = () => {
 
     // })
     setInterval(UpdateTime, 1000)
+    var i = 0;
+
+
+
+
+    const Loader = () => {
+        i++;
+        console.log(i);
+
+    }
+    setInterval(Loader, 100);
 
     return (
         <div className='pt-24 w-screen flex justify-center h-full pb-10 bg-primary dark:bg-bg-dark'>
