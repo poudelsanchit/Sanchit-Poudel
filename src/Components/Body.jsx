@@ -7,7 +7,7 @@ import FramerMagnetic from '../Components/FramerMagnetic';
 import Career from './Career';
 import Projects from './Projects';
 import Contact from './Contact';
-import { FaBasketball } from 'react-icons/fa6';
+import { FaGithub } from 'react-icons/fa6';
 
 const Body = () => {
   const [activeSection, setActiveSection] = useState('About'); // default active section
@@ -61,10 +61,10 @@ const Body = () => {
   ];
 
   const links = [
-    { url: 'https://www.instagram.com/kendritpoudel/', icon: <PiInstagramLogoFill /> },
-    { url: '', icon: <PiLinkedinLogoFill /> },
-    { url: '', icon: <FaBasketball /> },
-    { url: 'https://www.facebook.com/kendrit.poudel', icon: <PiFacebookLogoFill /> },
+    { url: 'https://github.com/poudelsanchit', icon: <FaGithub /> },
+    { url: 'linkedin.com/in/poudelsanchit/', icon: <PiLinkedinLogoFill /> },
+    { url: 'https://www.instagram.com/poudelsanchit/', icon: <PiInstagramLogoFill /> },
+    { url: 'https://www.facebook.com/poudelsanchit', icon: <PiFacebookLogoFill /> },
   ];
 
   return (

@@ -11,7 +11,7 @@ const Contact = React.forwardRef((props,ref) => {
                 <div className="flex gap-2 flex-col mb-5">
                   <div className="text-3xl"> Let's collaborate</div>
                   <div className="text-xs text-txttertiary">
-                    kendritp23@gmail.com
+                    snchtpdl12@gmail.com
                   </div>
                 </div>
                 <div className="flex  text-xs justify-between gap-10 ">

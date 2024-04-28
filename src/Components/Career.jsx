@@ -4,18 +4,18 @@ const Career = React.forwardRef((props,ref) => {
   const careerlist = [
     {
       time: "Now",
-      position: "Jr Architect",
-      company: "Mantra Architects",
+      position: "FullStack Developer ",
+      company: "",
     },
     {
-      time: "2023",
-      position: "Completed Bachelor",
-      company: "Institute of Engineering, Pulchowk Campus",
+      time: "Now",
+      position: "Studing Software Engineering",
+      company: "Pokhara University",
     },
     {
-      time: "2017",
+      time: "2021",
       position: "Completed +2",
-      company: "Sagarmatha Secondary School",
+      company: "Gogan Secondary School",
     },
   ];
     return (
@@ -32,9 +32,9 @@ const Career = React.forwardRef((props,ref) => {
                 <div
                   className="h-40 border-y-[1px] border-[#272522] w-full flex  shadow-[32px 32px 44px #050505,-32px -32px 44px #151515;]"
                 >
-                  <div className="w-8/12 flex   sm:gap-52 gap-20 items-center">
+                  <div className="w-full flex   sm:gap-52 gap-20 items-center">
                     <div>{data.time}</div>
-                    <div className="flex flex-col gap-1">
+                    <div className="flex flex-col w-full gap-1">
                       <div>{data.position}</div>
                       <div className="text-base font-light tracking-wide">
                         {data.company}

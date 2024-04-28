@@ -37,11 +37,11 @@ const BottomNavBar = () => {
             <div className="flex flex-col h-36 w-full text-base font-semibold gap-2">
               <div className="hover:bg-txtsecondary hover:text-black h-full cursor-pointer transition-all px-2 flex flex-col">
                 <div>Phone</div>
-                <div className="text-xs text-txttertiary">98000000000</div>
+                <div className="text-xs text-txttertiary">9846905213</div>
               </div>
               <div className="hover:bg-txtsecondary hover:text-black h-full cursor-pointer transition-all px-2 flex flex-col">
                 <div>Email</div>
-                <div className="text-xs text-txttertiary">kendritp23@gmail.com</div>
+                <div className="text-xs text-txttertiary">snchtpdl12@gmail.com</div>
               </div>{" "}
             </div>
           </div>

@@ -4,7 +4,6 @@ import SanchitImage from '../assets/sanchit.png';
 
 const Intro = ({ scrollToAboutMe }) => {
   const handleReadMoreClick = () => {
-    // Call the prop function to scroll to the AboutMe section
     scrollToAboutMe();
   };
 
@@ -28,7 +27,6 @@ const Intro = ({ scrollToAboutMe }) => {
           </p>
         </div>
         <div className="flex flex-wrap text-xl  pt-10 font-normal   ">
-          {/* Button to trigger smooth scroll to AboutMe */}
           <div
             className="h-12 w-32 rounded-md bg-txtsecondary text-white flex justify-center items-center font-Poppins text-base cursor-pointer"
             onClick={handleReadMoreClick}
