@@ -9,7 +9,7 @@ const Career = React.forwardRef((props,ref) => {
     },
     {
       time: "Now",
-      position: "Studing Software Engineering",
+      position: "Studying Software Engineering",
       company: "Pokhara University",
     },
     {

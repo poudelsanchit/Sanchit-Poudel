@@ -91,8 +91,8 @@ const Projects = React.forwardRef((props, ref) => {
           <div className="tracking-[0.2em] font-semibold text-xl w-full">
             Projects
           </div>
-          <div className="w-9/12 sm:w-full">
-            <div className="grid grid-cols-1 sm:grid-cols-2 flex-col text-4xl font-[550] tracking-tight gap-10">
+          <div className=" w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 flex-col text-4xl font-[550] tracking-tight gap-10 mr-2">
               {projectsData.map((data, index) => {
                 return ( 
                  <ProjectCard data={data} projectsdata={projectsData}/>

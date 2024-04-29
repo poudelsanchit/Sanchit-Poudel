@@ -1,6 +1,9 @@
-import React from 'react';
-import Graph from '../assets/blob.svg';
-import SanchitImage from '../assets/sanchit.png';
+import React from "react";
+import Graph from "../assets/blob.svg";
+import SanchitImage from "../assets/sanchit.png";
+import SanchitImage1 from "../assets/img2.jpg";
+import SanchitImage2 from "../assets/img3.jpeg";
+import SanchitImage3 from "../assets/img4.webp";
 
 const Intro = ({ scrollToAboutMe }) => {
   const handleReadMoreClick = () => {
@@ -8,24 +11,30 @@ const Intro = ({ scrollToAboutMe }) => {
   };
 
   return (
-    <div className="flex lg:flex-row flex-col  h-auto sm:min-h-screen  gap-10 font-Roboto">
-      <div className="flex flex-col sm:w-full pt-48 gap-1">
-        <div className="tracking-[0.2em] font-bold text-2xl">
+    <div className="flex lg:flex-row  sm:flex-col  flex-col-reverse   h-auto sm:min-h-screen   font-Roboto ">
+      <div className="flex flex-col sm:w-full sm:pt-48 gap-4 pt-3 ">
+        <div className="tracking-[0.2em] font-bold text-xl sm:text-3xl">
           Sanchit Poudel
         </div>
-        <div className="flex flex-wrap text-7xl font-[750] pt-2 tracking-tight ">
-          <p>
-            <span className="text-txtsecondary text-5xl sm:text-6xl">Software Enginner</span>
+        <div className="flex flex-wrap text-7xl font-[750]  tracking-tight  ">
+          <p className="text-txtsecondary text-3xl sm:text-6xl">
+            Software Enginner
           </p>
         </div>
         <div className="flex flex-wrap text-xl  pt-2 font-normal  ">
-          <p>
-            <span className="text-txtprimary">
-            I'm a Fullstack Developer currently studying software enginnering in Nepal.
-
-            </span>
+          <p className="text-txtprimary ">
+            <p>
+              I'm a  Fullstack Developer studying software engineering
+              in Nepal.
+            </p>
+            <p className="hidden sm:flex">
+              Passionate about technology, problem-solving, and continuous
+              learning, contributing to the vibrant tech community while honing
+              skills and expanding knowledge.
+            </p>
           </p>
         </div>
+
         <div className="flex flex-wrap text-xl  pt-10 font-normal   ">
           <div
             className="h-12 w-32 rounded-md bg-txtsecondary text-white flex justify-center items-center font-Poppins text-base cursor-pointer"
@@ -35,10 +44,12 @@ const Intro = ({ scrollToAboutMe }) => {
           </div>
         </div>
       </div>
-      <div className="sm:w-2/4  sm:mt-28  flex justify-center">
+      <div className="sm:w-3/4  sm:mt-28  flex justify-center  items-center ">
         <img
-          src={SanchitImage}
-          className="shape sm:w-[20rem] sm:h-[20rem] w-96 h-96  object-contain bg-txtsecondary "
+          loading={"lazy"}
+          src={SanchitImage2}
+          alt=""
+          className=" sm:h-[28rem] rounded-md object-cover sm:w-10/12 w-full pt-28 sm:pt-0 sm:pr-0  pr-5"
         />
       </div>
     </div>

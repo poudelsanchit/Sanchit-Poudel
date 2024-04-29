@@ -2,17 +2,20 @@ import React, { useEffect, useRef, useState } from 'react';
 import { PiInstagramLogoFill, PiLinkedinLogoFill, PiFacebookLogoFill } from 'react-icons/pi';
 import Intro from './Intro';
 import AboutMe from './AboutMe';
-import Kendrit from '../assets/sp1.png';
+import Sanchit from '../assets/sp1.png';
 import FramerMagnetic from '../Components/FramerMagnetic';
 import Career from './Career';
 import Projects from './Projects';
 import Contact from './Contact';
 import { FaGithub } from 'react-icons/fa6';
+import TechStack from './TechStack';
+import { CgMenuRight } from "react-icons/cg";
 
 const Body = () => {
   const [activeSection, setActiveSection] = useState('About'); // default active section
   const aboutMeRef = useRef(null);
   const journeyRef = useRef(null);
+  const techstackRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
@@ -22,15 +25,23 @@ const Body = () => {
 
     if (
       scrollPosition >= aboutMeRef.current.offsetTop &&
-      scrollPosition < journeyRef.current.offsetTop
+      scrollPosition < techstackRef.current.offsetTop
     ) {
       setActiveSection('About');
-    } else if (
+    }
+    else if (
+      scrollPosition >= techstackRef.current.offsetTop &&
+      scrollPosition < journeyRef.current.offsetTop
+    ) {
+      setActiveSection('TechStack');
+    } 
+    else if (
       scrollPosition >= journeyRef.current.offsetTop &&
       scrollPosition < projectsRef.current.offsetTop
     ) {
       setActiveSection('Journey');
-    } else if (
+    }     
+    else if (
       scrollPosition >= projectsRef.current.offsetTop &&
       scrollPosition < contactRef.current.offsetTop
     ) {
@@ -55,6 +66,7 @@ const Body = () => {
 
   const linkItems = [
     { linkName: 'About', ref: aboutMeRef },
+    { linkName: 'TechStack', ref: techstackRef },
     { linkName: 'Journey', ref: journeyRef },
     { linkName: 'Projects', ref: projectsRef },
     { linkName: 'Contact', ref: contactRef },
@@ -68,10 +80,14 @@ const Body = () => {
   ];
 
   return (
-    <div className="bg-bg-dark h-auto text-txtprimary font-poppins flex sm:justify-end">
-      <div className="w-2/12 h-full flex justify-center items-center fixed right-0 top-0">
-        <div className=" h-[95%] sm:h-5/6 w-6/12 flex flex-col items-end z-50">
-        <div className="font-Poppins text-sm font-medium z-50 flex flex-col tracking-wider sm:gap-1">
+    <div className="bg-bg-dark h-auto text-txtprimary font-poppins flex sm:justify-end ">
+            <CgMenuRight  className='text-3xl mr-4 fixed  right-2 top-4 sm:hidden z-50 '/>
+
+      <div className="w-2/12 h-full sm:flex justify-center items-center fixed right-0 top-0 hidden z-50">
+        <div className=" h-[95%] sm:h-5/6 w-6/12 sm:flex flex-col items-end z-50  ">
+
+        <div className="font-Poppins text-sm font-medium z-50 sm:flex flex-col tracking-wider sm:gap-1 ">
+
         {linkItems.map((item, index) => (
           <div
             key={index}
@@ -87,10 +103,11 @@ const Body = () => {
 
         </div>
       </div>
-      <div className="w-2/12 h-full flex justify-center items-center fixed left-0 top-0">
-        <div className="h-[95%] sm:h-5/6 w-7/12 flex flex-col justify-between">
-          <div className="font-Poppins font-bold z-50" onClick={scrollToTop}>
-            <img src={Kendrit} alt="" className="sm:h-12 cursor-pointer" />
+      <div className="w-2/12 h-full flex justify-center items-center fixed left-0 top-0 z-50">
+
+        <div className="h-[95%] sm:h-5/6 w-10/12 flex flex-col justify-between  ">
+          <div className="font-Poppins font-bold " onClick={scrollToTop}>
+            <img src={Sanchit} alt="" className="sm:h-12 h-10 ml-5 cursor-pointer " />
           </div>
           <div className="flex flex-col gap-10 text-xl hidden sm:block">
             {links.map((item, index) => (
@@ -105,14 +122,15 @@ const Body = () => {
           </div>
         </div>
       </div>
-      <div className="sm:w-8/12 w-10/12 flex flex-col sm:gap-5 gap-20 z-10 pl-7 sm:pl-0">
+      <div className="sm:w-[80%] w-full flex flex-col sm:gap-5 gap-20 z-10 pl-7 sm:pl-0 ">
         <Intro scrollToAboutMe={() => scrollToSection(aboutMeRef)} />
         <AboutMe ref={aboutMeRef} />
+        <TechStack ref={techstackRef} />
         <Career ref={journeyRef} />
         <Projects ref={projectsRef} />
         <Contact ref={contactRef} />
       </div>
-      <div className="sm:w-2/12 w-[2%]"></div>
+      <div className="sm:w-1/12 w-[2%]"></div>
     </div>
   );
 };
