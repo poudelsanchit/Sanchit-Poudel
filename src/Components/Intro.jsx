@@ -47,7 +47,7 @@ const Intro = ({ scrollToAboutMe }) => {
       <div className="sm:w-3/4  sm:mt-28  flex justify-center  items-center ">
         <img
           loading={"lazy"}
-          src={SanchitImage2}
+          src={'https://images.unsplash.com/photo-1714811741988-74140fdf158a?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'}
           alt=""
           className=" sm:h-[28rem] rounded-md object-cover sm:w-10/12 w-full pt-28 sm:pt-0 sm:pr-0  pr-5"
         />
