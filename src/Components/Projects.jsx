@@ -13,11 +13,29 @@ const Projects = React.forwardRef((props, ref) => {
 
   const projectsData = [
     {
+      projectname: "Mantra Architects",
+      projectLocation: "An webapp for Architects and Interiors.",
+      projectImage: "https://cdn.dribbble.com/userupload/15468388/file/original-7b7a448bf255c26ac2e9d7a4c50389ed.png?resize=1835x907",
+      link: 'https://mantra-architects.vercel.app/',
+      bgColor: "#181818",
+      tech: [
+        {
+          name: "ReactJs",
+          logo: <FaReact />,
+        },
+        
+        {
+          name: "Tailwind",
+          logo: <BiLogoTailwindCss />,
+        },
+      ],
+    },
+    {
       projectname: "Clothify",
       projectLocation: "An Ecommerce app",
       projectImage: Project1,
       link: 'https://clothifyios.vercel.app/',
-      bgColor: "#001616",
+      bgColor: "#181818",
       tech: [
         {
           name: "ReactJs",
@@ -42,7 +60,7 @@ const Projects = React.forwardRef((props, ref) => {
       projectLocation: "A note taking app",
       projectImage: Project2,
       link: 'https://notesios.vercel.app/',
-      bgColor: "#001616",
+      bgColor: "#181818",
       tech: [
         {
           name: "ReactJs",
@@ -67,7 +85,7 @@ const Projects = React.forwardRef((props, ref) => {
       projectLocation: "Stay on top of all your favorite sports.",
       projectImage: Project3,
       link: 'https://fixturehub.vercel.app/',
-      bgColor: "#001616",
+      bgColor: "#181818",
       tech: [
         {
           name: "ReactJs",
@@ -79,6 +97,7 @@ const Projects = React.forwardRef((props, ref) => {
         },
       ],
     },
+    
   ];
 
   return (

@@ -19,14 +19,14 @@ const Contact = React.forwardRef((props,ref) => {
                     <label htmlFor="">NAME</label>
                     <input
                       type="text"
-                      className="w-full bg-[#121212] h-10 rounded-md focus:outline-none pl-4 text-lg font-Poppins font-normal tracking-wide"
+                      className="w-full bg-[#181818] h-10 rounded-md focus:outline-none pl-4 text-lg font-Poppins font-normal tracking-wide"
                     />
                   </div>
                   <div className="flex flex-col gap-2 w-full">
                     <label htmlFor="">EMAIL</label>
                     <input
                       type="text"
-                      className="w-full bg-[#121212] h-10 rounded-md focus:outline-none pl-4 text-lg font-Poppins font-normal tracking-wide"
+                      className="w-full bg-[#181818] h-10 rounded-md focus:outline-none pl-4 text-lg font-Poppins font-normal tracking-wide"
                     />
                   </div>
                 </div>
@@ -34,7 +34,7 @@ const Contact = React.forwardRef((props,ref) => {
                   <label htmlFor="">MESSAGE</label>
                   <textarea
                     type="text"
-                    className="w-full bg-[#121212] focus:outline-none p-4 text-lg font-Poppins tracking-wide font-normal rounded-md h-64"
+                    className="w-full bg-[#181818] focus:outline-none p-4 text-lg font-Poppins tracking-wide font-normal rounded-md h-64"
                   />
                 </div>
                 <div className="gap-1 ml-auto bg-txtsecondary text-white rounded-md h-12 w-28 flex justify-center items-center text-lg tracking-normal  cursor-pointer  opacity-90 hover:opacity-100">
