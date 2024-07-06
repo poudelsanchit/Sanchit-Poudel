@@ -83,10 +83,10 @@ const Body = () => {
     <div className="bg-bg-dark h-auto text-txtprimary font-poppins flex sm:justify-end ">
             <CgMenuRight  className='text-3xl mr-4 fixed  right-2 top-4 sm:hidden z-50 '/>
 
-      <div className="w-2/12 h-full sm:flex justify-center items-center fixed right-0 top-0 hidden z-50">
-        <div className=" h-[95%] sm:h-5/6 w-6/12 sm:flex flex-col items-end z-50  ">
+      <div className="w-1/12 h-full sm:flex justify-center items-center fixed right-0 top-0 hidden z-50">
+        <div className=" h-[95%] sm:h-5/6 w-6/12 sm:flex flex-col items-end z-50 ">
 
-        <div className="font-Poppins text-sm font-medium z-50 sm:flex flex-col tracking-wider sm:gap-1 ">
+        <div className="font-Poppins text-sm font-medium z-50 sm:flex flex-col tracking-wider sm:gap-1  ">
 
         {linkItems.map((item, index) => (
           <div
