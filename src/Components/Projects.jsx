@@ -4,6 +4,7 @@ import Project3 from "../assets/project3.png";
 
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { BiLogoMongodb, BiLogoTailwindCss } from "react-icons/bi";
+import { IoLogoFirebase } from "react-icons/io5";
 
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
@@ -23,10 +24,14 @@ const Projects = React.forwardRef((props, ref) => {
           name: "ReactJs",
           logo: <FaReact />,
         },
-        
+
         {
           name: "Tailwind",
           logo: <BiLogoTailwindCss />,
+        },
+        {
+          name: "Firebase",
+          logo: <IoLogoFirebase />,
         },
       ],
     },
